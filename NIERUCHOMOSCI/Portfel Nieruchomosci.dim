@@ -1,0 +1,218 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="aa2664b1-c730-4662-9b25-f985e857ffee" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Portfel Nieruchomosci</ID>
+  <Name>Portfel Nieruchomosci</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1197" scrolltop="-8506" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6588" y="20161" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Portfel_Nieruchomosci" left="-642" top="-1032" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4154" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003a1000004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Portfel_Nieruchomosci" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1197</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8506</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-642</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-1032</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9591b75b-5c6f-4b29-978b-ed1aa7f5a0ae">
+    <DataSourceViewID>Nieruchomosci420</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="698b8136-79f3-4c8c-8475-c6d97c1d730e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="509ab015-f1cc-4579-802f-e1938496b1b2">
+      <ID>Portfel Nieruchomosci ID</ID>
+      <Name>Portfel Nieruchomosci ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5697f2ff-a231-4743-af5e-0b2510f2c9fd">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e4630694-6709-4979-89d2-d7641c1605ad">
+            <TableID>dbo_Portfel_Nieruchomosci</TableID>
+            <ColumnID>PortfelNieruchomosciID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7e2d0335-e6ac-45ec-95a5-99c8a8bce379">
+          <AttributeID>Wlasciciel</AttributeID>
+          <Name>Wlasciciel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e9520d61-d5cb-44b7-a6a4-e393077a3d3d">
+          <AttributeID>Wartosc Portfela</AttributeID>
+          <Name>Wartosc Portfela</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7b134101-a66e-4aab-802e-c7f87994a603">
+          <AttributeID>Liczba Nieruchomosci</AttributeID>
+          <Name>Liczba Nieruchomosci</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f9d10637-2d4b-4d67-9c2f-4fa134b0f17c">
+          <AttributeID>Srednia Roczna Zwrot</AttributeID>
+          <Name>Srednia Roczna Zwrot</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="321c98a1-4309-427c-b540-5bed4c6ef509">
+      <ID>Wlasciciel</ID>
+      <Name>Wlasciciel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b040df9f-e19b-4ce8-ac43-91156a2febf3">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fddeaad9-34a7-4b46-9bdf-dac7ce15abcb">
+            <TableID>dbo_Portfel_Nieruchomosci</TableID>
+            <ColumnID>Wlasciciel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f8c11ac-c026-4a1f-b0d7-b2bb3118b9f9">
+      <ID>Wartosc Portfela</ID>
+      <Name>Wartosc Portfela</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="616818f8-c074-4072-b49c-3831dce8a7f7">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="02e9cc55-e477-41d1-a449-7295d1a3b6ef">
+            <TableID>dbo_Portfel_Nieruchomosci</TableID>
+            <ColumnID>WartoscPortfela</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1dcce95b-0b70-4da0-840b-63f89561ff30">
+      <ID>Liczba Nieruchomosci</ID>
+      <Name>Liczba Nieruchomosci</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0347d112-0acd-43df-8289-9e3cf7948c38">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7bef746-65ef-4bf5-9bfa-ae2354cdb9a5">
+            <TableID>dbo_Portfel_Nieruchomosci</TableID>
+            <ColumnID>LiczbaNieruchomosci</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe971fa7-5d4a-4f71-9bca-5188b9bdb0a5">
+      <ID>Srednia Roczna Zwrot</ID>
+      <Name>Srednia Roczna Zwrot</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0ad128ba-c586-4a86-b103-37374275643c">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44d1788a-f951-4334-b124-7d26353eaf05">
+            <TableID>dbo_Portfel_Nieruchomosci</TableID>
+            <ColumnID>SredniaRocznaZwrot</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="ec6b49b8-908a-4515-b923-052d74be9368">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="e7b84604-9862-40e3-8ad1-63820cc1641e">
+          <ID>Liczba Nieruchomosci</ID>
+          <Name>Liczba Nieruchomosci</Name>
+          <SourceAttributeID>Liczba Nieruchomosci</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c7f455cc-5873-47d9-8ab5-97373562904f">
+          <ID>Srednia Roczna Zwrot</ID>
+          <Name>Srednia Roczna Zwrot</Name>
+          <SourceAttributeID>Srednia Roczna Zwrot</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a81bd2de-821e-4b77-955a-b81f0b502d37">
+          <ID>Wartosc Portfela</ID>
+          <Name>Wartosc Portfela</Name>
+          <SourceAttributeID>Wartosc Portfela</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="04d76e91-3412-4499-abaa-1134002059bb">
+          <ID>Wlasciciel</ID>
+          <Name>Wlasciciel</Name>
+          <SourceAttributeID>Wlasciciel</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e3b79356-185a-43dc-ad2a-1b04cc6a212c">
+          <ID>Portfel Nieruchomosci ID</ID>
+          <Name>Portfel Nieruchomosci ID</Name>
+          <SourceAttributeID>Portfel Nieruchomosci ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

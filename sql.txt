@@ -1,0 +1,80 @@
+-- Tworzenie tabeli Nieruchomosci
+CREATE TABLE Nieruchomosci (
+    NieruchomoscID INT PRIMARY KEY,
+    Adres NVARCHAR(255),
+    TypNieruchomosci NVARCHAR(50),
+    Wielkosc DECIMAL(10,2),
+    RokBudowy INT
+);
+
+-- Tworzenie tabeli Typy_Transakcji
+CREATE TABLE Typy_Transakcji (
+    TypTransakcjiID INT PRIMARY KEY,
+    Opis NVARCHAR(255)
+);
+
+-- Tworzenie tabeli Analiza_Rynku
+CREATE TABLE Analiza_Rynku (
+    AnalizaRynkuID INT PRIMARY KEY,
+    DataAnalizy DATE,
+    SrednieCeny DECIMAL(10,2),
+    WskaznikPopytu DECIMAL(5,2),
+    WskaznikPodazy DECIMAL(5,2)
+);
+
+-- Tworzenie tabeli Portfel_Nieruchomosci
+CREATE TABLE Portfel_Nieruchomosci (
+    PortfelNieruchomosciID INT PRIMARY KEY,
+    Wlasciciel NVARCHAR(255),
+    WartoscPortfela DECIMAL(15,2),
+    LiczbaNieruchomosci INT,
+    SredniaRocznaZwrot DECIMAL(5,2)
+);
+
+-- Tworzenie tabeli Transakcje_Fakty
+CREATE TABLE Transakcje_Fakty (
+    TransakcjaID INT PRIMARY KEY,
+    NieruchomoscID INT,
+    TypTransakcjiID INT,
+    AnalizaRynkuID INT,
+    PortfelNieruchomosciID INT,
+    KwotaTransakcji DECIMAL(15,2),
+    DataTransakcji DATE,
+    Ilosc INT,
+    FOREIGN KEY (NieruchomoscID) REFERENCES Nieruchomosci(NieruchomoscID),
+    FOREIGN KEY (TypTransakcjiID) REFERENCES Typy_Transakcji(TypTransakcjiID),
+    FOREIGN KEY (AnalizaRynkuID) REFERENCES Analiza_Rynku(AnalizaRynkuID),
+    FOREIGN KEY (PortfelNieruchomosciID) REFERENCES Portfel_Nieruchomosci(PortfelNieruchomosciID)
+);
+
+
+
+INSERT INTO Nieruchomosci (NieruchomoscID, Adres, TypNieruchomosci, Wielkosc, RokBudowy) VALUES
+(1, 'Ul. Klonowa 12, Warszawa', 'Mieszkanie', 65.0, 1995),
+(2, 'Ul. Brzozowa 3, Kraków', 'Biuro', 120.0, 2005),
+(3, 'Ul. Wierzbowy Zakątek 8, Gdańsk', 'Dom', 150.0, 2010);
+
+
+INSERT INTO Typy_Transakcji (TypTransakcjiID, Opis) VALUES
+(1, 'Sprzedaż'),
+(2, 'Wynajem'),
+(3, 'Zamiana');
+
+
+
+INSERT INTO Analiza_Rynku (AnalizaRynkuID, DataAnalizy, SrednieCeny, WskaznikPopytu, WskaznikPodazy) VALUES
+(1, '2024-01-01', 5000.00, 3.5, 4.2),
+(2, '2024-01-15', 5200.00, 3.7, 4.1),
+(3, '2024-02-01', 5300.00, 3.8, 4.0);
+
+
+INSERT INTO Portfel_Nieruchomosci (PortfelNieruchomosciID, Wlasciciel, WartoscPortfela, LiczbaNieruchomosci, SredniaRocznaZwrot) VALUES
+(1, 'Jan Kowalski', 1000000.00, 5, 6.0),
+(2, 'Anna Nowak', 1500000.00, 8, 5.5),
+(3, 'Paweł Górski', 2000000.00, 10, 7.0);
+
+INSERT INTO Transakcje_Fakty (TransakcjaID, NieruchomoscID, TypTransakcjiID, AnalizaRynkuID, PortfelNieruchomosciID, KwotaTransakcji, DataTransakcji, Ilosc) VALUES
+(1, 1, 1, 1, 1, 300000.00, '2024-01-10', 1),
+(2, 2, 2, 2, 2, 2000.00, '2024-01-20', 1),
+(3, 3, 3, 3, 3, 450000.00, '2024-02-05', 1);
+

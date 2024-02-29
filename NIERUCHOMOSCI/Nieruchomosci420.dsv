@@ -1,0 +1,181 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ed7258e0-817e-49d5-b7db-5b6730b881c0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Nieruchomosci420</ID>
+  <Name>Nieruchomosci420</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Nieruchomosci420</DataSourceID>
+  <Schema>
+    <xs:schema id="Nieruchomosci420" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Nieruchomosci420" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="466e9284-fe06-49f0-8d35-c5f34195c255">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Analiza_Rynku" msprop:DbTableName="Analiza_Rynku" msprop:FriendlyName="Analiza_Rynku" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1e226a30-ae4c-44bc-9d5e-2a303a063f09">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AnalizaRynkuID" msprop:FriendlyName="AnalizaRynkuID" msprop:DbColumnName="AnalizaRynkuID" msprop:design-time-name="fcea8760-6993-4c24-929f-428cf6798154" type="xs:int" />
+                  <xs:element name="DataAnalizy" msprop:FriendlyName="DataAnalizy" msprop:DbColumnName="DataAnalizy" msprop:design-time-name="ccf27285-ca7e-4334-8315-36cbcd3f7de0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SrednieCeny" msprop:FriendlyName="SrednieCeny" msprop:DbColumnName="SrednieCeny" msprop:design-time-name="f4043a0a-ddf1-4b39-9ad5-1ae14d66aa65" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="WskaznikPopytu" msprop:FriendlyName="WskaznikPopytu" msprop:DbColumnName="WskaznikPopytu" msprop:design-time-name="91538ae3-96b0-4752-8708-288ed090519f" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="WskaznikPodazy" msprop:FriendlyName="WskaznikPodazy" msprop:DbColumnName="WskaznikPodazy" msprop:design-time-name="65f85947-3559-470a-96cf-342a486978ed" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Nieruchomosci" msprop:DbTableName="Nieruchomosci" msprop:FriendlyName="Nieruchomosci" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="cf76232a-66b3-4d61-a3f0-7e45c8808d94">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="NieruchomoscID" msprop:FriendlyName="NieruchomoscID" msprop:DbColumnName="NieruchomoscID" msprop:design-time-name="eabf5a93-2133-4d7d-a286-a6872750a7fa" type="xs:int" />
+                  <xs:element name="Adres" msprop:FriendlyName="Adres" msprop:DbColumnName="Adres" msprop:design-time-name="e95ae897-79ff-4020-b06c-989085b9770f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TypNieruchomosci" msprop:FriendlyName="TypNieruchomosci" msprop:DbColumnName="TypNieruchomosci" msprop:design-time-name="5bcfb10b-5553-48d6-b36d-3789407bd927" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Wielkosc" msprop:FriendlyName="Wielkosc" msprop:DbColumnName="Wielkosc" msprop:design-time-name="ee9308c0-c14e-475a-8912-758d324efbd8" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RokBudowy" msprop:FriendlyName="RokBudowy" msprop:DbColumnName="RokBudowy" msprop:design-time-name="ccecbd8c-1869-4ca9-9048-b228eb50597e" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Portfel_Nieruchomosci" msprop:DbTableName="Portfel_Nieruchomosci" msprop:FriendlyName="Portfel_Nieruchomosci" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="109022e4-bfee-4d05-af59-bad1fbaaa30c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PortfelNieruchomosciID" msprop:FriendlyName="PortfelNieruchomosciID" msprop:DbColumnName="PortfelNieruchomosciID" msprop:design-time-name="c01f6efd-e7d9-47a6-acdb-c353557d3d04" type="xs:int" />
+                  <xs:element name="Wlasciciel" msprop:FriendlyName="Wlasciciel" msprop:DbColumnName="Wlasciciel" msprop:design-time-name="845efcba-1bff-46aa-b359-4070998a43ac" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WartoscPortfela" msprop:FriendlyName="WartoscPortfela" msprop:DbColumnName="WartoscPortfela" msprop:design-time-name="c5910283-ec70-4797-9f39-d1c8dca16828" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="LiczbaNieruchomosci" msprop:FriendlyName="LiczbaNieruchomosci" msprop:DbColumnName="LiczbaNieruchomosci" msprop:design-time-name="3447087c-ba47-419c-acdf-1f81c1b95e65" type="xs:int" minOccurs="0" />
+                  <xs:element name="SredniaRocznaZwrot" msprop:FriendlyName="SredniaRocznaZwrot" msprop:DbColumnName="SredniaRocznaZwrot" msprop:design-time-name="4f1f928d-ec0a-410e-8829-2edef8d4cd20" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Transakcje_Fakty" msprop:DbTableName="Transakcje_Fakty" msprop:FriendlyName="Transakcje_Fakty" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="c6d4458d-edad-4903-8b78-3ee04b2d06f4">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TransakcjaID" msprop:FriendlyName="TransakcjaID" msprop:DbColumnName="TransakcjaID" msprop:design-time-name="7fa4777b-a1c2-439d-b22e-c3235d499169" type="xs:int" />
+                  <xs:element name="NieruchomoscID" msprop:FriendlyName="NieruchomoscID" msprop:DbColumnName="NieruchomoscID" msprop:design-time-name="77c137e1-c157-4330-a763-c9b12729736f" type="xs:int" minOccurs="0" />
+                  <xs:element name="TypTransakcjiID" msprop:FriendlyName="TypTransakcjiID" msprop:DbColumnName="TypTransakcjiID" msprop:design-time-name="89de14f7-5439-47b4-9474-ee36931fabb3" type="xs:int" minOccurs="0" />
+                  <xs:element name="AnalizaRynkuID" msprop:FriendlyName="AnalizaRynkuID" msprop:DbColumnName="AnalizaRynkuID" msprop:design-time-name="8e715ebe-ee49-48e3-909f-d31dcdad2731" type="xs:int" minOccurs="0" />
+                  <xs:element name="PortfelNieruchomosciID" msprop:FriendlyName="PortfelNieruchomosciID" msprop:DbColumnName="PortfelNieruchomosciID" msprop:design-time-name="a066d1ab-ecaf-4773-8f68-bae9d6a45f20" type="xs:int" minOccurs="0" />
+                  <xs:element name="KwotaTransakcji" msprop:FriendlyName="KwotaTransakcji" msprop:DbColumnName="KwotaTransakcji" msprop:design-time-name="dec5636c-c9b1-4835-bb4a-b2a3c731c5c7" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="DataTransakcji" msprop:FriendlyName="DataTransakcji" msprop:DbColumnName="DataTransakcji" msprop:design-time-name="b161a5d8-8ca2-41e3-8b15-f00e0e0de525" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Ilosc" msprop:FriendlyName="Ilosc" msprop:DbColumnName="Ilosc" msprop:design-time-name="28d62f2d-603b-4d74-b7eb-cbd086d3b278" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Typy_Transakcji" msprop:DbTableName="Typy_Transakcji" msprop:FriendlyName="Typy_Transakcji" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="cecd6d1c-7eaf-47fc-8fa4-79a266320986">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TypTransakcjiID" msprop:FriendlyName="TypTransakcjiID" msprop:DbColumnName="TypTransakcjiID" msprop:design-time-name="5e2679bb-f8fd-496b-85d7-6a66def75a8d" type="xs:int" />
+                  <xs:element name="Opis" msprop:FriendlyName="Opis" msprop:DbColumnName="Opis" msprop:design-time-name="e7356e7a-c6df-4774-a0e9-68789239a897" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Analiza_Rynku" />
+          <xs:field xpath="AnalizaRynkuID" />
+        </xs:unique>
+        <xs:unique name="dbo_Nieruchomosci_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Nieruchomosci" />
+          <xs:field xpath="NieruchomoscID" />
+        </xs:unique>
+        <xs:unique name="dbo_Portfel_Nieruchomosci_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Portfel_Nieruchomosci" />
+          <xs:field xpath="PortfelNieruchomosciID" />
+        </xs:unique>
+        <xs:unique name="dbo_Transakcje_Fakty_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Transakcje_Fakty" />
+          <xs:field xpath="TransakcjaID" />
+        </xs:unique>
+        <xs:unique name="dbo_Typy_Transakcji_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Typy_Transakcji" />
+          <xs:field xpath="TypTransakcjiID" />
+        </xs:unique>
+        <xs:keyref name="FK__Transakcj__Nieru__3F466844" refer="dbo_Nieruchomosci_Constraint1">
+          <xs:selector xpath=".//dbo_Transakcje_Fakty" />
+          <xs:field xpath="NieruchomoscID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Transakcj__TypTr__403A8C7D" refer="dbo_Typy_Transakcji_Constraint1">
+          <xs:selector xpath=".//dbo_Transakcje_Fakty" />
+          <xs:field xpath="TypTransakcjiID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Transakcj__Portf__4222D4EF" refer="dbo_Portfel_Nieruchomosci_Constraint1">
+          <xs:selector xpath=".//dbo_Transakcje_Fakty" />
+          <xs:field xpath="PortfelNieruchomosciID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Transakcj__Anali__412EB0B6" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Transakcje_Fakty" />
+          <xs:field xpath="AnalizaRynkuID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Nieruchomosci420 xmlns="" />
+  </Schema>
+</DataSourceView>
